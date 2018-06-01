@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>B</title>
+	<title>BWS</title>
 	<style>
 		#content {
 			width: 100%;
@@ -50,12 +50,13 @@
 </head>
 <body>
 	<div id="content">
-		 B站直播间弹幕系统
+		输入房间号码，点击[进入房间]按钮
 	</div>
-	input type="text" placeholder="请输入房间号码,仅限数字, 例如9938182" id="input">	<button id="btn">进入</button>
+	<input type="text" placeholder="请输入房间号码,仅限数字, 例如5279" id="input">
+	<button id="btn">进入房间</button>
 	<script src="./biWebSock.js"></script>
 	<script type="text/javascript">
-		biWebSock.start(9938182).then(addDanMu)
+		biWebSock.start(5279).then(addDanMu)
 		document.getElementById('btn').addEventListener('click', function() {
 			var number = document.getElementById('input').value;
 			if (number) {
