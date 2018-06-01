@@ -33,7 +33,7 @@ window.biWebSock = (function() {
         wsUrl = 'wss://broadcastlv.chat.bilibili.com:2245/sub'
     }
 
-    wsUrl = 'wss://api.energys.cn/sub' // 自己的服务器转发
+    //wsUrl = 'wss://api.energys.cn/sub' // 自己的服务器转发
 
     function str2bytes(str) {
         var bytes = new Array()
