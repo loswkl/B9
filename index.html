@@ -49,13 +49,13 @@
 	</style>
 </head>
 <body>
-	<div id="content">
+<!--	<div id="content">
 		输入房间号码，点击[进入房间]按钮
 	</div>
-<!--	<input type="text" placeholder="请输入房间号码,仅限数字, 例如9938182" id="input">
-	<button id="btn">进入房间</button>
+	<input type="text" placeholder="请输入房间号码,仅限数字, 例如9938182" id="input">
+	<button id="btn">进入房间</button>-->
 	<script src="./biWebSock.js"></script>
-	<script type="text/javascript">-->
+	<script type="text/javascript">
 		biWebSock.start(9938182).then(addDanMu)
 		document.getElementById('btn').addEventListener('click', function() {
 			var number = document.getElementById('input').value;
